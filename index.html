@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyLeech | Copy Trade Top Polymarket Traders</title>
+    <meta name="description" content="Automatically copy trades from the best Polymarket traders. Token-gated access with $LEECH.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧛</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🧛</span>
+                <span class="logo-text">PolyLeech</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#tiers">Tiers</a>
+                <a href="#leaderboard">Leaderboard</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <button class="btn btn-primary" id="nav-connect-btn">
+                <span>Connect Wallet</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">🦇 Copy Trading on Polymarket</div>
+                <h1>Leech Alpha From<br><span class="gradient-text">Top Traders</span></h1>
+                <p class="hero-description">
+                    Automatically copy trades from Polymarket's most profitable wallets. 
+                    Hold $LEECH to unlock copy trading features.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large" id="hero-connect-btn">
+                        <span>🔗 Connect Wallet</span>
+                    </button>
+                    <a href="https://t.me/PolyLeechBot" target="_blank" class="btn btn-secondary btn-large">
+                        <span>🤖 Open Bot</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">$2.4M+</span>
+                        <span class="stat-label">Volume Copied</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">1,247</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">89%</span>
+                        <span class="stat-label">Win Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="card-header">
+                        <span class="card-badge">🏆 Top Trader</span>
+                        <span class="card-wallet">0x8dxd...7f3a</span>
+                    </div>
+                    <div class="card-stats">
+                        <div class="card-stat">
+                            <span class="label">Total P&L</span>
+                            <span class="value positive">+$512,000</span>
+                        </div>
+                        <div class="card-stat">
+                            <span class="label">Win Rate</span>
+                            <span class="value">98.2%</span>
+                        </div>
+                        <div class="card-stat">
+                            <span class="label">Trades</span>
+                            <span class="value">7,241</span>
+                        </div>
+                    </div>
+                    <div class="card-trade">
+                        <div class="trade-info">
+                            <span class="trade-market">BTC above $100k by March?</span>
+                            <span class="trade-action">Bought YES @ 67¢</span>
+                        </div>
+                        <span class="trade-time">2 min ago</span>
+                    </div>
+                    <button class="btn btn-copy">🧛 Copy This Trader</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It <span class="gradient-text">Works</span></h2>
+                <p>Start copying profitable traders in minutes</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>1. Connect & Verify</h3>
+                    <p>Connect your Solana wallet to verify your $LEECH balance and unlock your tier.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>2. Deposit USDC</h3>
+                    <p>Fund your trading wallet with USDC on Polygon. This is what you'll trade with.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>3. Pick Traders</h3>
+                    <p>Browse the leaderboard and select which profitable traders you want to copy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>4. Auto-Copy</h3>
+                    <p>Our bot instantly copies their trades to your wallet. Get notified on Telegram.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tiers Section -->
+    <section class="tiers" id="tiers">
+        <div class="container">
+            <div class="section-header">
+                <h2>$LEECH <span class="gradient-text">Tiers</span></h2>
+                <p>Hold $LEECH tokens to unlock features and reduce fees</p>
+            </div>
+            <div class="tiers-grid">
+                <div class="tier-card">
+                    <div class="tier-icon">👀</div>
+                    <h3>Freebie</h3>
+                    <div class="tier-requirement">0 $LEECH</div>
+                    <ul class="tier-features">
+                        <li>✅ View leaderboard</li>
+                        <li>✅ View trades</li>
+                        <li>❌ Copy trading</li>
+                        <li>❌ Alerts</li>
+                    </ul>
+                    <div class="tier-fee">-</div>
+                </div>
+                <div class="tier-card">
+                    <div class="tier-icon">🧛</div>
+                    <h3>Leech</h3>
+                    <div class="tier-requirement">100,000 $LEECH</div>
+                    <ul class="tier-features">
+                        <li>✅ Copy 1 wallet</li>
+                        <li>✅ Basic filters</li>
+                        <li>✅ Trade notifications</li>
+                        <li>✅ Stop loss</li>
+                    </ul>
+                    <div class="tier-fee">1.5% fee</div>
+                </div>
+                <div class="tier-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="tier-icon">🦇</div>
+                    <h3>Vampire</h3>
+                    <div class="tier-requirement">500,000 $LEECH</div>
+                    <ul class="tier-features">
+                        <li>✅ Copy 5 wallets</li>
+                        <li>✅ Advanced filters</li>
+                        <li>✅ Whale alerts</li>
+                        <li>✅ Priority execution</li>
+                    </ul>
+                    <div class="tier-fee">1.0% fee</div>
+                </div>
+                <div class="tier-card">
+                    <div class="tier-icon">🏰</div>
+                    <h3>Dracula</h3>
+                    <div class="tier-requirement">2,000,000 $LEECH</div>
+                    <ul class="tier-features">
+                        <li>✅ Unlimited wallets</li>
+                        <li>✅ All features</li>
+                        <li>✅ Priority execution</li>
+                        <li>✅ Lower fees</li>
+                    </ul>
+                    <div class="tier-fee">0.5% fee</div>
+                </div>
+                <div class="tier-card">
+                    <div class="tier-icon">👑</div>
+                    <h3>Nosferatu</h3>
+                    <div class="tier-requirement">10,000,000 $LEECH</div>
+                    <ul class="tier-features">
+                        <li>✅ Everything in Dracula</li>
+                        <li>✅ API access</li>
+                        <li>✅ Private alpha channel</li>
+                        <li>✅ Lowest fees</li>
+                    </ul>
+                    <div class="tier-fee">0.25% fee</div>
+                </div>
+            </div>
+            <div class="tiers-cta">
+                <a href="#" class="btn btn-primary btn-large" id="buy-leech-btn">
+                    🛒 Buy $LEECH on Raydium
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="leaderboard" id="leaderboard">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top <span class="gradient-text">Traders</span></h2>
+                <p>The most profitable wallets on Polymarket</p>
+            </div>
+            <div class="leaderboard-table">
+                <div class="table-header">
+                    <span>Rank</span>
+                    <span>Wallet</span>
+                    <span>P&L</span>
+                    <span>Win Rate</span>
+                    <span>Trades</span>
+                    <span>Action</span>
+                </div>
+                <div class="table-row">
+                    <span class="rank">🥇</span>
+                    <span class="wallet">0x8dxd...7f3a</span>
+                    <span class="pnl positive">+$512,000</span>
+                    <span class="winrate">98.2%</span>
+                    <span class="trades">7,241</span>
+                    <button class="btn btn-small btn-copy-trader" data-wallet="0x8dxd7f3a2b1c4d5e6f7a8b9c0d1e2f3a4b5c6d7e">Copy</button>
+                </div>
+                <div class="table-row">
+                    <span class="rank">🥈</span>
+                    <span class="wallet">0x4924...7890</span>
+                    <span class="pnl positive">+$89,000</span>
+                    <span class="winrate">72.4%</span>
+                    <span class="trades">450</span>
+                    <button class="btn btn-small btn-copy-trader" data-wallet="0x4924abc123def456789012345678901234567890">Copy</button>
+                </div>
+                <div class="table-row">
+                    <span class="rank">🥉</span>
+                    <span class="wallet">0xdome...f012</span>
+                    <span class="pnl positive">+$67,000</span>
+                    <span class="winrate">65.8%</span>
+                    <span class="trades">890</span>
+                    <button class="btn btn-small btn-copy-trader" data-wallet="0xdomer123456789abcdef0123456789abcdef012">Copy</button>
+                </div>
+                <div class="table-row">
+                    <span class="rank">4</span>
+                    <span class="wallet">0xwhal...ba98</span>
+                    <span class="pnl positive">+$45,000</span>
+                    <span class="winrate">61.2%</span>
+                    <span class="trades">320</span>
+                    <button class="btn btn-small btn-copy-trader" data-wallet="0xwhale9876543210fedcba9876543210fedcba98">Copy</button>
+                </div>
+                <div class="table-row">
+                    <span class="rank">5</span>
+                    <span class="wallet">0xalph...8899</span>
+                    <span class="pnl positive">+$38,000</span>
+                    <span class="winrate">58.9%</span>
+                    <span class="trades">560</span>
+                    <button class="btn btn-small btn-copy-trader" data-wallet="0xalpha1111222233334444555566667777888899">Copy</button>
+                </div>
+            </div>
+            <div class="leaderboard-cta">
+                <a href="https://t.me/PolyLeechBot" target="_blank" class="btn btn-secondary">
+                    View Full Leaderboard in Bot →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What is PolyLeech?</h3>
+                    <p>PolyLeech is a Telegram bot that automatically copies trades from successful Polymarket traders to your wallet. Hold $LEECH tokens to unlock features.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How does copy trading work?</h3>
+                    <p>When a trader you're copying makes a trade on Polymarket, our bot instantly executes the same trade in your wallet. You get notified via Telegram.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is my money safe?</h3>
+                    <p>You control your own wallet. We never have access to your private keys. The bot only executes trades on your behalf using USDC you deposit.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What are the fees?</h3>
+                    <p>We charge a small fee (0.25% - 1.5%) on each copied trade, depending on your tier. Higher $LEECH holdings = lower fees.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Why do I need $LEECH tokens?</h3>
+                    <p>$LEECH is the access token for the platform. Holding more tokens unlocks more features, more copy slots, and lower fees.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Which blockchain is used?</h3>
+                    <p>$LEECH token is on Solana. Trading happens on Polygon (where Polymarket operates). You need USDC on Polygon to trade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to <span class="gradient-text">Leech Alpha?</span></h2>
+                <p>Connect your wallet and start copying profitable traders today.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large" id="cta-connect-btn">
+                        🔗 Connect Wallet
+                    </button>
+                    <a href="https://t.me/PolyLeechBot" target="_blank" class="btn btn-secondary btn-large">
+                        🤖 Open Telegram Bot
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🧛</span>
+                    <span class="logo-text">PolyLeech</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://t.me/PolyLeechBot" target="_blank">Telegram Bot</a>
+                    <a href="https://t.me/polyleech" target="_blank">Community</a>
+                    <a href="https://twitter.com/polyleech" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">Docs</a>
+                </div>
+                <div class="footer-disclaimer">
+                    Trading involves risk. Past performance is not indicative of future results.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Wallet Modal -->
+    <div class="modal" id="wallet-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            
+            <!-- Step 1: Connect -->
+            <div class="modal-step" id="step-connect">
+                <div class="modal-icon">🔗</div>
+                <h3>Connect Your Wallet</h3>
+                <p>Connect your Solana wallet to verify your $LEECH balance</p>
+                <button class="btn btn-primary btn-large btn-full" id="connect-phantom-btn">
+                    <img src="https://phantom.app/img/phantom-icon-purple.svg" alt="Phantom" class="wallet-icon">
+                    Connect Phantom
+                </button>
+                <button class="btn btn-secondary btn-large btn-full" id="connect-solflare-btn">
+                    <img src="https://solflare.com/favicon.ico" alt="Solflare" class="wallet-icon">
+                    Connect Solflare
+                </button>
+            </div>
+
+            <!-- Step 2: Sign -->
+            <div class="modal-step hidden" id="step-sign">
+                <div class="modal-icon">✍️</div>
+                <h3>Verify Ownership</h3>
+                <p>Sign a message to prove you own this wallet. This is free and doesn't cost any gas.</p>
+                <div class="wallet-display">
+                    <span id="connected-wallet"></span>
+                </div>
+                <button class="btn btn-primary btn-large btn-full" id="sign-message-btn">
+                    Sign Message
+                </button>
+            </div>
+
+            <!-- Step 3: Success -->
+            <div class="modal-step hidden" id="step-success">
+                <div class="modal-icon">✅</div>
+                <h3>Wallet Verified!</h3>
+                <div class="verification-result">
+                    <div class="result-item">
+                        <span class="label">Wallet</span>
+                        <span class="value" id="verified-wallet"></span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">$LEECH Balance</span>
+                        <span class="value" id="leech-balance">Loading...</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">Your Tier</span>
+                        <span class="value" id="user-tier">Loading...</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-large btn-full" id="open-bot-btn">
+                    🤖 Open Telegram Bot
+                </a>
+                <p class="modal-note">Your verification is ready. Click above to start copy trading!</p>
+            </div>
+
+            <!-- Error State -->
+            <div class="modal-step hidden" id="step-error">
+                <div class="modal-icon">❌</div>
+                <h3>Connection Failed</h3>
+                <p id="error-message">Something went wrong. Please try again.</p>
+                <button class="btn btn-primary btn-large btn-full" id="retry-btn">
+                    Try Again
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>
