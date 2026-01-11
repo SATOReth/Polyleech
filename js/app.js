@@ -89,9 +89,9 @@ async function signVerificationMessage() {
         isVerified = true;
         
         var shortWallet = connectedWallet.slice(0, 4) + '...' + connectedWallet.slice(-4);
-        document.getElementById('verified-wallet').textContent = shortWallet;
-        document.getElementById('leech-balance').textContent = '0 $LEECH';
-        document.getElementById('user-tier').textContent = '👀 Freebie';
+        document.getElementById('verified-wallet').textContent = connectedWallet.slice(0, 4) + '...' + connectedWallet.slice(-4);
+        document.getElementById('leech-balance').textContent = 'Verified by bot';
+        document.getElementById('user-tier').textContent = '✅ Click below';
         
         showStep('success');
     } catch (err) {
