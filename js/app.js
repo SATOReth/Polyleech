@@ -4,7 +4,7 @@
 
 // Configuration
 const CONFIG = {
-    telegramBot: 'PolyLeechBot',
+    telegramBot: 'PolyLeech_Bot',
     leechTokenMint: 'So11111111111111111111111111111111111111112', // Replace with real token mint
     tiers: [
         { name: 'Freebie', emoji: '👀', minBalance: 0 },
